@@ -32,11 +32,7 @@
   </head>
   <body>
     <div class="encode2">
-      <canvas class="bg1" id="background">
-        <img class="subtract-icon2" alt="" src="./public/subtract.png" />
-
-        <img class="subtract-icon3" alt="" src="./public/subtract1.png" />
-      </canvas>
+      <img class="bg-icon" id="backgrond" alt="" src="./public/bg.png" />
       <b class="encode3">Decode</b>
       <nav class="navbar2" id="navbar">
         <div class="navbar-inner"></div>
@@ -51,7 +47,7 @@
           <div class="encodebtn-child"></div>
           <div class="encode5">Decode</div>
         </button>
-        <div class="add-image-and">Add Image or link</div>
+        <div class="add-image-and">Add Image and decode password</div>
         <button class="plus1" id="upload">
           <input type="file" id="uploadBtn" accept=".jpg" onchange="validateFile(this)">
             <label for="uploadBtn" id="uploadLabel">+</label>
@@ -59,7 +55,7 @@
         <input
           class="link"
           id="link"
-          placeholder="Eg: drive.google.com"
+          placeholder="Password"
           type="text"
           data-animate-on-scroll
         />
