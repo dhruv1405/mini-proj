@@ -6,12 +6,6 @@
     opacity: 1;
   }
 }
-
-nav a{
-  text-decoration: none;
-  color: black;
-}
-
 .bg-icon {
   position: absolute;
   top: 261px;
@@ -21,32 +15,28 @@ nav a{
   object-fit: fill;
 }
 
-.subtract-icon2,
-.subtract-icon3 {
-  position: relative;
-  width: 1130px;
-  height: 1130px;
+#uploadimgBtn, #uploadmsgBtn {
+  display: none;
 }
-.subtract-icon3 {
-  width: 1085px;
-  height: 1085px;
+#uploadLabel {
+  padding: 12px 17px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  border: 2px solid;
+  height: 50px;
+  width: 50px;
 }
-.bg1,
-.encode3 {
+
+.encode1 {
   position: absolute;
-}
-.bg1 {
-  top: 261px;
-  left: -248px;
-  filter: blur(150px);
-  width: 1130px;
-  height: 1130px;
-}
-.encode3 {
   top: 201px;
   left: calc(50% - 110px);
 }
-.navbar-inner {
+.navbar-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -60,31 +50,31 @@ nav a{
   width: 1440px;
   height: 200px;
 }
-.decode5,
-.encode4,
-.how-it-works3,
-.logo2 {
+.decode,
+.encode2,
+.how-it-works,
+.logo {
   position: absolute;
   top: 88px;
   font-weight: 500;
 }
-.logo2 {
+.logo {
   left: 118px;
   text-align: left;
 }
-.decode5,
-.encode4,
-.how-it-works3 {
+.decode,
+.encode2,
+.how-it-works {
   left: 1265px;
 }
-.encode4,
-.how-it-works3 {
+.encode2,
+.how-it-works {
   left: 1174px;
 }
-.how-it-works3 {
+.how-it-works {
   left: 1033px;
 }
-.navbar2 {
+.navbar {
   margin: 0;
   position: absolute;
   top: 1px;
@@ -108,7 +98,7 @@ nav a{
   border: 2px solid var(--color-gainsboro);
   box-sizing: border-box;
   width: 500px;
-  height: 250px;
+  height: 320px;
 }
 .encodebtn-child {
   border-radius: var(--br-8xs);
@@ -116,7 +106,7 @@ nav a{
   width: 430px;
   height: 50px;
 }
-.encode5 {
+.encode3 {
   position: absolute;
   top: 15px;
   left: 180px;
@@ -126,27 +116,32 @@ nav a{
   color: var(--color-white);
   text-align: center;
 }
-.add-image-and,
-.encodebtn {
-  position: absolute;
-  left: 40px;
-}
 .encodebtn {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: 160px;
+  position: absolute;
+  top: 230px;
+  left: 40px;
   width: 430px;
   height: 50px;
 }
-.add-image-and {
+.add-image-and,
+.image,
+.message {
+  position: absolute;
   top: 41px;
-  font-size: var(--font-size-base);
+  left: 40px;
   font-weight: 600;
-  font-family: var(--font-sf-pro);
-  color: var(--color-black);
-  text-align: left;
+}
+.image,
+.message {
+  top: 105px;
+  left: 100px;
+}
+.message {
+  left: 310px;
 }
 .plus-child {
   position: absolute;
@@ -164,62 +159,52 @@ nav a{
   width: 20px;
   height: 20px;
 }
-.link,
-.plus1 {
-  position: absolute;
-  top: 90px;
-  height: 50px;
-}
-#uploadBtn {
-  display: none;
-}
-#uploadLabel {
-  padding: 12px 17px;
-  background-color: #ffffff;
-  color: #000000;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
-  border: 2px solid;
-  height: 50px;
-  width: 50px;
-}
+.plus,
 .plus1 {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
+  position: absolute;
+  top: 90px;
   left: 40px;
   width: 50px;
+  height: 50px;
 }
-.link {
+.plus1 {
+  left: 250px;
+}
+.encodebox,
+.password {
+  position: absolute;
+  font-size: var(--font-size-base);
+}
+.password {
   border: 2px solid var(--color-gainsboro);
   outline: 0;
   font-family: var(--font-sf-pro);
-  font-size: var(--font-size-base);
   background-color: var(--color-white);
-  left: 110px;
+  top: 160px;
+  left: 40px;
   border-radius: var(--br-8xs);
   box-sizing: border-box;
-  width: 360px;
-  padding: 15px 19px 16px;
+  width: 430px;
+  height: 50px;
+  padding: 15px 22.700000000000728px 16px;
   color: var(--color-gainsboro);
   opacity: 0;
-  color: black;
 }
-.link.animate {
+.password.animate {
   animation: 1s ease 0s 1 normal forwards fade-in;
 }
 .encodebox {
-  margin: 0;
-  position: absolute;
   top: 317px;
   left: 470px;
   width: 500px;
-  height: 250px;
+  height: 320px;
+  text-align: left;
 }
-.encode2 {
+.encode {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
@@ -229,4 +214,9 @@ nav a{
   font-size: var(--font-size-45xl);
   color: var(--color-black);
   font-family: var(--font-sf-pro);
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
 }
