@@ -15,7 +15,7 @@
   object-fit: fill;
 }
 
-#uploadimgBtn, #uploadmsgBtn {
+#uploadBtn, #uploadBt2 {
   display: none;
 }
 #uploadLabel {
